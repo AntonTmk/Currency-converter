@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.View">
+    <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0" stylesheets="@main2.css">
+         <children>
+              <AnchorPane layoutX="127.0" prefHeight="1006.0" prefWidth="1643.0" style="-fx-background-color: #ffff;">
+                  <children>
+                  <Circle fill="#7769d3" layoutX="1519.0" layoutY="658.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="#7769d3" layoutX="117.0" layoutY="658.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="#7769d3" layoutX="117.0" layoutY="973.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="322.0" layoutX="91.0" layoutY="661.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="367.0" layoutX="119.0" layoutY="632.0" stroke="#ffffff00" strokeType="INSIDE" width="1403.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="322.0" layoutX="1345.0" layoutY="655.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+                  <Circle fill="#7769d3" layoutX="1519.0" layoutY="973.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="#7769d3" layoutX="124.0" layoutY="107.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="112.0" layoutX="98.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="133.0" layoutX="124.0" stroke="#ffffff00" strokeType="INSIDE" width="1387.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="112.0" layoutX="1334.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+                  <Circle fill="#7769d3" layoutX="1508.0" layoutY="107.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                            <ChoiceBox fx:id="chois1" layoutX="960.0" layoutY="50.0" prefHeight="51.0" prefWidth="277.0" styleClass="list-cell" stylesheets="@main.css" />
+                            <ChoiceBox fx:id="chois2" layoutX="518.0" layoutY="50.0" prefHeight="51.0" prefWidth="275.0" styleClass="list-cell" stylesheets="@main.css" />
+                  <Circle fill="#7769d3" layoutX="1526.0" layoutY="561.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="322.0" layoutX="1352.0" layoutY="243.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="367.0" layoutX="126.0" layoutY="220.0" stroke="#ffffff00" strokeType="INSIDE" width="1403.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7769d3" height="322.0" layoutX="98.0" layoutY="249.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+                  <Circle fill="#7769d3" layoutX="124.0" layoutY="561.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="#7769d3" layoutX="124.0" layoutY="246.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="#7769d3" layoutX="1526.0" layoutY="246.0" radius="26.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                            <Label fx:id="label" layoutX="639.0" layoutY="219.0" text="Label" textFill="WHITE">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </Label>
+                            <TextField fx:id="col" layoutX="164.0" layoutY="49.0" prefHeight="52.0" prefWidth="226.0" stylesheets="@main2.css" text="1">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </TextField>
+                            <Label layoutX="949.0" layoutY="22.0" text="To" textFill="WHITE">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </Label>
+                            <Label layoutX="518.0" layoutY="22.0" text="From" textFill="WHITE">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </Label>
+                            <LineChart fx:id="graphic" layoutX="293.0" layoutY="232.0" prefHeight="355.0" prefWidth="1000.0" styleClass="chart-series-line" stylesheets="@main2.css">
+                                <xAxis>
+                                    <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" fx:id="xaxis">
+                           <tickLabelFont>
+                              <Font size="18.0" />
+                           </tickLabelFont>
+                        </CategoryAxis>
+                                </xAxis>
+                                <yAxis>
+                                    <NumberAxis fx:id="yaxis" forceZeroInRange="false" minorTickLength="30.0" side="LEFT" tickLabelFill="WHITE" tickUnit="40.0">
+                           <tickLabelFont>
+                              <Font size="18.0" />
+                           </tickLabelFont>
+                        </NumberAxis>
+                                </yAxis>
+                            </LineChart>
+                            <Button fx:id="bal" layoutX="1376.0" layoutY="49.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1em; -fx-border-radius: 1em;" styleClass="Button" stylesheets="@main.css" text="Convert" textFill="#7769d3">
+                                <font>
+                                    <Font name="System Bold" size="20.0" />
+                                </font>
+                  </Button>
+                            <JFXListView fx:id="list" layoutX="98.0" layoutY="653.0" prefHeight="334.0" prefWidth="1000.0" style="-fx-background-color: #7769d3; -fx-font-color: #fffff;" styleClass="list-cell" stylesheets="@main2.css" />
+                            <Button fx:id="listadd" layoutX="1354.0" layoutY="936.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: #ffff;" styleClass="Button" stylesheets="@main.css" text="add" textFill="#7769d3">
+                                <font>
+                                    <Font name="Arial Black" size="18.0" />
+                                </font>
+                  </Button>
+                            <Button fx:id="listdel" layoutX="1201.0" layoutY="936.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #ffff;" styleClass="Button" stylesheets="@main.css" text="delete" textFill="#7769d3">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </Button>
+                            <Label layoutX="1199.0" layoutY="653.0" text="From" textFill="WHITE">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </Label>
+                            <Label layoutX="1198.0" layoutY="772.0" text="To" textFill="WHITE">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                  </Label>
+                            <ChoiceBox fx:id="listfrom" layoutX="1199.0" layoutY="680.0" prefHeight="51.0" prefWidth="312.0" styleClass="list-cell" stylesheets="@main.css" />
+                            <ChoiceBox fx:id="listto" layoutX="1198.0" layoutY="805.0" prefHeight="51.0" prefWidth="314.0" styleClass="list-cell" stylesheets="@main.css" />
+                  </children>
+              </AnchorPane>
+                      <Label fx:id="updatetime" layoutX="127.0" layoutY="1011.0" text="Label" />
+                <Button fx:id="full" layoutX="1784.0" layoutY="33.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" styleClass="Button" stylesheets="@main.css" text="Window mode" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+         </children>
+      </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

@@ -1,0 +1,38 @@
+.tab-header-background{
+-fx-background-color:  #7769d3;
+}
+.tab-pane{
+-fx-tab-min-height:100px;
+}
+.tab:selected{
+-fx-font-size: 60.0;
+}
+.list-cell{
+    -fx-background-color: #ffffff;
+    -fx-font-size:18.0;
+    -fx-border-color: #7769d3;
+    -fx-background-radius: 1em;
+    -fx-border-radius: 1em;
+}
+.list-cell:selected {
+    -fx-font-size:18.0;
+    -fx-border-color: #7769d3;
+    -fx-background-radius: 1em;
+    -fx-border-radius: 1em;
+}
+.chart-series-line {
+-fx-font-size: 18.0;
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+-fx-stroke: #7769d3;
+-fx-background-color: #ffffff;
+}
+.full {
+-fx-background-image: url("full.png");
+-fx-background-size: 100%;
+}
+.Button {
+-fx-background-color: #7769d3;
+-fx-background-radius: 1em;
+-fx-border-radius: 1em;
+}

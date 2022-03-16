@@ -1,0 +1,11 @@
+.chart-series-line {
+-fx-font-size: 18.0;
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+-fx-stroke: #7769d3;
+}
+.list-cell{
+-fx-text-fill: #ffffff;
+-fx-font-size: 18.0;
+-fx-background-color:  #6b5cdd;
+}

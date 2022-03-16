@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.View">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="1000.0">
+         <children>
+            <JFXTabPane layoutX="-4.0" prefHeight="502.0" prefWidth="1008.0" style="-fx-font-size: 18;" stylesheets="@main.css">
+               <tabs>
+                  <Tab text="Convert">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="bal" layoutX="871.0" layoutY="398.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #7769d3; -fx-background-radius: 1em; -fx-border-radius: 1em;" styleClass="Button" stylesheets="@main.css" text="Convert" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Button>
+                              <ChoiceBox fx:id="chois1" layoutX="318.0" layoutY="67.0" prefHeight="51.0" prefWidth="277.0" styleClass="list-cell" stylesheets="@main.css" />
+                              <ChoiceBox fx:id="chois2" layoutX="673.0" layoutY="67.0" prefHeight="51.0" prefWidth="275.0" styleClass="list-cell" stylesheets="@main.css" />
+                              <Label fx:id="label" layoutX="40.0" layoutY="219.0" text="Label">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <TextField fx:id="col" layoutX="26.0" layoutY="67.0" prefHeight="52.0" prefWidth="226.0" styleClass="list-cell" stylesheets="@main.css" text="1">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></TextField>
+                              <Label layoutX="673.0" layoutY="34.0" text="To">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="318.0" layoutY="34.0" text="From">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="updatetime" layoutX="12.0" layoutY="434.0" text="Label" />
+
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Chart">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <LineChart fx:id="graphic" prefHeight="457.0" prefWidth="1000.0" styleClass="chart-series-line" stylesheets="@main.css">
+                                 <xAxis>
+                                    <CategoryAxis side="BOTTOM" fx:id="xaxis" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis fx:id="yaxis" forceZeroInRange="false" minorTickLength="30.0" side="LEFT" tickUnit="40.0" />
+                                 </yAxis>
+                              </LineChart>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-font-size: 18;" text="List">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXListView fx:id="list" prefHeight="355.0" prefWidth="1000.0" />
+                              <Button fx:id="listadd" layoutX="826.0" layoutY="401.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="150.0" styleClass="Button" stylesheets="@main.css" text="add" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Black" size="18.0" />
+                                 </font></Button>
+                              <Button fx:id="listdel" layoutX="654.0" layoutY="401.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" styleClass="Button" stylesheets="@main.css" text="delete" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Button>
+                              <Label layoutX="14.0" layoutY="362.0" text="From">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="335.0" layoutY="362.0" text="To">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <ChoiceBox fx:id="listfrom" layoutX="14.0" layoutY="395.0" prefHeight="51.0" prefWidth="312.0" styleClass="list-cell" stylesheets="@main.css" />
+                              <ChoiceBox fx:id="listto" layoutX="335.0" layoutY="395.0" prefHeight="51.0" prefWidth="314.0" styleClass="list-cell" stylesheets="@main.css" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+            <Button fx:id="full" layoutX="894.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #ffff; -fx-background-radius: 1em; -fx-border-radius: 1em;" text="Full Scren" textFill="#7769d3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
