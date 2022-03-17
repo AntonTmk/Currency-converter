@@ -89,7 +89,7 @@
                   </Tab>
                </tabs>
             </JFXTabPane>
-            <Button fx:id="full" layoutX="894.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #ffff; -fx-background-radius: 1em; -fx-border-radius: 1em;" text="Full Scren" textFill="#7769d3">
+            <Button fx:id="full" layoutX="894.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #ffff; -fx-background-radius: 1em; -fx-border-radius: 1em;" text="Full Screen" textFill="#7769d3">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
